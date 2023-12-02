@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>日本語学習</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href=""><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./script.js"></script>
+</head>
+<body>
+	<h2>日本語学習</h2>
+	<div class="ctrlgroup">
+		<select id="type">
+			<option value="gojuon">五十音</option>
+			<option value="word">語彙</option>
+			<option value="sentence">フレーズ</option>
+		</select>
+		<select id="cat">
+			<option value="hiragana">平仮名</option>
+			<option value="katakana">片仮名</option>
+			<option value="roman">ローマじ</option>
+			<option value="random">ランダム</option>
+		</select>
+</div>
+<div class="flip">
+	<div class="card front">
+		<p></p>
+	</div>
+	<div class="card back">
+		<p id="first"></p>
+		<p id="second"></p>
+	</div>
+</div>
+	<div class="button" id="generate">ランダムに生成される</div>
+</body>
+</html>
